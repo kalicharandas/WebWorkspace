@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Hyperlinks Demonstration</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 20px;
+      }
+      .section {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      img {
+        border: 2px solid #333;
+        border-radius: 8px;
+        width: 200px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Working with Hyperlinks</h1>
+
+    <div class="section">
+      <h2>1. Basic Text Link</h2>
+      <p>
+        The <code>href</code> attribute specifies the URL of the page the link
+        goes to.
+      </p>
+
+      <p>
+        Visit the college website:
+        <a href="https://www.aec.edu.in/">Aditya Engineering College</a>
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>2. Target Attribute</h2>
+      <p>
+        The <code>target="_blank"</code> attribute forces the link to open in a
+        new browser tab or window.
+      </p>
+
+      <p>
+        <a href="https://www.aec.edu.in/" target="_blank"
+          >Click here to open AEC in a new tab</a
+        >
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>3. Image Link</h2>
+      <p>
+        You can nest an <code>&lt;img&gt;</code> tag inside an
+        <code>&lt;a&gt;</code> tag to make the image clickable.
+      </p>
+
+      <p>Click the image below to view the Gallery:</p>
+      <a href="https://www.aec.edu.in/?p=Gallery">
+        <img
+          src="https://via.placeholder.com/300x150?text=View+Gallery"
+          alt="College Gallery"
+        />
+      </a>
+    </div>
+  </body>
+</html>

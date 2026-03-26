@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Iframe with Separate Screen</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+
+      .container {
+        display: flex;
+        height: 100vh;
+      }
+
+      .menu {
+        width: 30%;
+        background: #f2f2f2;
+        padding: 20px;
+      }
+
+      .menu a {
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+        background: #e1e9e1;
+        color: red;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .menu a:hover {
+        background: #ef8505;
+      }
+
+      .content {
+        width: 70%;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Left Side Links -->
+      <div class="menu">
+        <h3>Learning Links</h3>
+
+        <a href="https://www.youtube.com/embed/UB1O30fR-EE" target="frame1"
+          >HTML YouTube Video</a
+        >
+
+        <a
+          href="https://www.sanfoundry.com/1000-python-questions-answers/"
+          target="frame1"
+          >HTML Documentation</a
+        >
+
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          target="frame1"
+          >MDN HTML Docs</a
+        >
+      </div>
+
+      <!-- Right Side Iframe -->
+      <div class="content">
+        <iframe name="frame1"></iframe>
+      </div>
+    </div>
+  </body>
+</html>

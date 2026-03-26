@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists Demonstration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .list-container {
+            margin-bottom: 30px;
+            padding:200px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Working with HTML Lists</h1>
+
+    <div class="list-container">
+        <h2>1. Unordered List (`<ul>`)</h2>
+        <p>Used for items where order does not matter.
+             Defaults to bullet points.</p>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+    </div>
+
+    <div class="list-container">
+        <h2>2. Ordered List (`<ol>`)</h2>
+        <p>Used for items where sequential order is important.
+             Defaults to numbers.</p>
+        <ol>
+            <li>Wake up</li>
+            <li>Brush teeth</li>
+            <li>Eat breakfast</li>
+        </ol>
+    </div>
+
+    <div class="list-container">
+        <h2>3. Nested List (Unordered inside Ordered)</h2>
+        <p>You can nest lists inside other lists.</p>
+        <ol>
+            <li>**Fruits**
+                <ul>
+                    <li>Apple</li>
+                    <li>Banana</li>
+                </ul>
+            </li>
+            <li>**Vegetables**
+                <ul>
+                    <li>Carrot</li>
+                    <li>Broccoli</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="list-container">
+        <h2>4. Ordered List inside an Unordered List</h2>
+        <p>This is useful for outlining steps within categories.</p>
+        <ul>
+            <li>**Phase 1: Planning**
+                <ol>
+                    <li>Define requirements</li>
+                    <li>Create wireframes</li>
+                </ol>
+            </li>
+            <li>**Phase 2: Development**
+                <ol>
+                    <li>Frontend coding</li>
+                    <li>Backend integration</li>
+                    <li>Testing</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+    <div class="list-container">
+        <h2>5. Definition List (`<dl>`)</h2>
+        <p>Used to display a list of terms and their descriptions.</p>
+        <dl>
+            <dt><strong>HTML</strong></dt>
+            <dd>HyperText Markup Language - The standard markup language for documents designed to be displayed in a web browser.</dd>
+            
+            <dt><strong>CSS</strong></dt>
+            <dd>Cascading Style Sheets - A style sheet language used for describing the presentation of a document written in a markup language.</dd>
+        </dl>
+    </div>
+
+</body>
+</html>
